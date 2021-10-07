@@ -272,6 +272,20 @@
             <binding>
                 <command>dialog-apply</command>
             </binding>
+			<binding>
+				<command>nasal</command>
+					<script>
+						if(getprop("instrumentation/nav[0]/ident") == 1){
+							setprop("instrumentation/kma20/nav1", 1);
+						}else{
+							setprop("instrumentation/kma20/nav1", 0);
+						}
+					</script>
+			</binding>
+			<binding>
+				<command>property-toggle</command>
+				<property>sim/sound/click2</property>
+			</binding>
         </checkbox>
 
         <input>
@@ -355,6 +369,20 @@
             <binding>
                 <command>dialog-apply</command>
             </binding>
+			<binding>
+				<command>nasal</command>
+					<script>
+						if(getprop("instrumentation/nav[1]/ident") == 1){
+							setprop("instrumentation/kma20/nav2", 1);
+						}else{
+							setprop("instrumentation/kma20/nav2", 0);
+						}
+					</script>
+			</binding>
+			<binding>
+				<command>property-toggle</command>
+				<property>sim/sound/click2</property>
+			</binding>
         </checkbox>
 
         <input>
@@ -437,6 +465,20 @@
             <binding>
                 <command>dialog-apply</command>
             </binding>
+			<binding>
+				<command>nasal</command>
+					<script>
+						if(getprop("instrumentation/adf[0]/ident-audible") == 1){
+							setprop("instrumentation/kma20/adf", 1);
+						}else{
+							setprop("instrumentation/kma20/adf", 0);
+						}
+					</script>
+			</binding>
+			<binding>
+				<command>property-toggle</command>
+				<property>sim/sound/click2</property>
+			</binding>
         </checkbox>
 
 <!-- ADF2 added by Simworld2020 -->
